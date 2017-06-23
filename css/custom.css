@@ -1,0 +1,47 @@
+video.star-field-video { 
+    position: relative;
+    width: 100%;
+    z-index: -100;
+    background: url(img/videobg.jpg) no-repeat;
+    background-size: cover; 
+    overflow: hidden;
+}
+
+video.stream-video { 
+    width: 100%;
+    z-index: -90;
+    background: url(img/videobg.jpg) no-repeat;
+    background-size: cover; 
+}
+
+.stream-video-container {
+    margin-top: -400px;
+    margin-bottom: -9px;
+}
+
+.menu .active > a {
+    background-color: turquoise;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: turquoise;
+}
+
+.menu, .top-bar, .top-bar ul {
+    background-color: black;
+    color: white;
+}
+
+.relative-position {
+    position: relative;
+}
+
+.menu-bar {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0px;
+}
