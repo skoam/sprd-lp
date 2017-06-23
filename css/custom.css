@@ -1,3 +1,7 @@
+body {
+    background-color: black;
+}
+
 video.star-field-video { 
     position: relative;
     width: 100%;
@@ -12,11 +16,14 @@ video.stream-video {
     z-index: -90;
     background: url(img/videobg.jpg) no-repeat;
     background-size: cover; 
+    border-top: 2px solid #001111;
+    border-left: 2px solid #001111;
+    border-right: 2px solid #001111;
 }
 
 .stream-video-container {
-    margin-top: -400px;
-    margin-bottom: -9px;
+    margin-top: -409px;
+    margin-bottom: -8px;
 }
 
 .menu .active > a {
