@@ -9,12 +9,13 @@
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.css" />
         <link rel="stylesheet" href="css/app.css">
         <link rel="stylesheet" href="css/custom.css">
+        <script src="//use.fontawesome.com/fb1f2d7608.js"></script>
     </head>
     <body>
         <div class="top-bar black-top-bar relative-position">
             <div class="top-bar-left">
                 <ul class="menu">
-                    <li><a href="#">Logo</a></li>
+                    <li class="border-white-right"><a class="link-logo" href="#"><img class="logo-pixelcotton" src="img/logo_pixelcotton.png"></img></a></li>
                     <li><a href="#">STREAMMERCH PLUGIN</a></li>
                 </ul>
             </div>
@@ -22,19 +23,20 @@
 
         <div class"row large-12 medium-12 small-12 centered star-field-container">
             <video playsinline autoplay muted loop poster="img/videobg.jpg" id="star-field" class="star-field-video">
-                <source src="video/particles_7_cut_700.mp4" type="video/mp4">
+                <source src="video/particles_8_cut.mp4" type="video/mp4">
             </video>
         </div>
 
         <div class="row large-8 medium-12 small-12 centered stream-video-container">
+            <div class="row large-8 medium-12 small-12 centered stream-video-darken"></div>
             <video playsinline autoplay muted loop poster="img/videobg.jpg" id="stream-video" class="stream-video">
-                <source src="video/stream_5_cut.mp4" type="video/mp4">
+                <source src="video/stream_1_cut.mp4" type="video/mp4">
             </video>
         </div>
 
         <br>
 
-        <div class="row menu-bar collapse">
+        <div class="row menu-bar collapse" id="menu-bar">
             <div class="small-0 medium-0 large-2 hide-for-small-only hide-for-medium-only column">
                 <ul class="menu">
                     <li><a>&nbsp;</a></li>
@@ -42,7 +44,7 @@
             </div>
             <div class="small-12 large-8 medium-12 centered column">
                 <ul class="menu">
-                    <li><a href="#">Logo</a></li>
+                    <li class="border-white-right"><a class="link-logo" href="#"><img class="logo-stream-merch" src="img/stream_merch.png"></img></a></li>
                     <li><a href="#">PLUGIN</a></li>
                     <li class="active"><a href="#">INSTALL</a></li>
                     <li><a href="#">FEATURES</a></li>
@@ -55,14 +57,15 @@
             </div>
         </div>
 
-        <div class="row large-12 small-12 medium-12 lower-main-container collapse">
+        <div class="row large-12 small-12 medium-12 lower-main-container collapse" id="first-container">
             <div class="large-2 column forced-column hide-for-medium-only hide-for-small-only"></div>
             <div class="large-8 column hero-section hero-section-revolution">
-                <div class="column large-6 forced-column bottom-textbox left-textbox">
-                    <h2>REVOLUTION OF GAMING</h2>
-                    <p>
+                <div class="column large-6 forced-column bottom-textbox left-textbox align-center">
+                    <h2 class="align-left">REVOLUTION OF GAMING</h2>
+                    <p class="align-left">
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
                     </p>
+                    <a href="#" class="button">SUBSCRIBE</a>
                 </div>
             </div>
             <div class="large-2 column forced-column hide-for-medium-only hide-for-small-only"></div>
@@ -73,14 +76,17 @@
             <div class="large-8 medium-12 small-12 column hero-section hero-section-points">
                 <div class="large-4 medium-4 small-4 column text-center forced-column points">
                     <h3>100&#37; FREE</h3>
+                    <i class="fa fa-5x fa-thumbs-up white" aria-hidden="true"></i>
                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
                 </div>
                 <div class="large-4 medium-4 small-4 column text-center forced-column points">
                     <h3>EASY SETUP</h3>
+                    <i class="fa fa-5x fa-television white" aria-hidden="true"></i>
                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
                 </div>
                 <div class="large-4 medium-4 small-4 column text-center forced-column points">
                     <h3>INTERACTIVE</h3>
+                    <i class="fa fa-5x fa-hand-pointer-o white" aria-hidden="true"></i>
                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
                 </div>
             </div>
@@ -99,7 +105,7 @@
                                     <p class="align-left">
                                     Lorem ipsum dolor sit amet, magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
                                     </p>
-                                    <a href="#" class="button">Subscribe</a>
+                                    <a href="#" class="button">SUBSCRIBE</a>
                                 </div>
                                 <img class="orbit-image orbit-picture-half" src="img/grow_channel_bg.jpg" alt="Space">
                             </figure>
@@ -181,5 +187,25 @@
             ga('create', 'UA-68252518-1', 'auto');
             ga('send', 'pageview');
         </script>--!>
+
+        <script>
+            var firstContainer = document.getElementById("first-container");
+            var menuBar = document.getElementById("menu-bar");
+            var updateMenuBar = setInterval(function () {
+                if (window.scrollY > 741) {
+                    menuBar.style.position = "fixed";
+                    menuBar.style.top = "0px";
+                    menuBar.style.zIndex = "10";
+
+                    firstContainer.style.marginTop = "40px";
+                } else {
+                    menuBar.style.position = "relative";
+                    menuBar.style.top = "";
+                    menuBar.style.zIndex = "3";
+
+                    firstContainer.style.marginTop = "";
+                }
+            }, 1);
+        </script>
     </body>
 </html>

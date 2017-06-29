@@ -14,7 +14,7 @@
 }
 
 body {
-    background-color: #212830;
+    background-color: #08090b;
 }
 
 video.star-field-video { 
@@ -32,6 +32,7 @@ video.stream-video {
     border-left: 2px solid #001111;
     border-right: 2px solid #001111;
     float: left;
+    box-shadow: 0px 0px 6px -2px black;
 }
 
 .star-field-container {
@@ -42,6 +43,17 @@ video.stream-video {
     z-index: 2;
     margin-top: -30%;
     margin-bottom: -24px;
+}
+
+.stream-video-darken {
+    height: 630px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    z-index: 3;
+    opacity: 0.6;
+    left: 15px;
 }
 
 .menu .active > a {
@@ -61,9 +73,14 @@ a:hover {
     color: turquoise;
 }
 
+.menu > li > a {
+    line-height: 1.4;
+}
+
 .menu, .top-bar, .top-bar ul {
     background-color: black;
     color: white;
+    box-shadow: 1px 1px 3px 1px black;
 }
 
 .top-bar {
@@ -72,6 +89,30 @@ a:hover {
 
 .relative-position {
     position: relative;
+}
+
+.logo-stream-merch {
+    max-height: 25px;
+    padding: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.logo-pixelcotton {
+    max-height: 15px;
+    padding: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 2px;
+}
+
+li.border-white-right {
+    border-right: 1px solid white;
+}
+
+
+a.link-logo {
+    padding: 2px !important;
 }
 
 .menu-bar {
@@ -88,6 +129,8 @@ a:hover {
     background-image: url("../img/tmpbg_posts.jpg");
     background-size: cover;
     height: 500px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
 }
 
 .hero-section-revolution {
@@ -101,15 +144,27 @@ a:hover {
 }
 
 .hero-section-points {
-    height: 200px;
+    background-image: none;
+    background-color: #050a0d;
+
+    background: -webkit-linear-gradient(#050a0d, black); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#050a0d, black); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#050a0d, black); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#050a0d, black); /* Standard syntax */
+
+    height: 250px;
 }
 
 div.points {
-    padding-top: 15px;
+    padding-top: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
 .orbit-container, .orbit-bullets {
     background-color: black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
 }
 
 .orbit-bullets {
@@ -117,10 +172,18 @@ div.points {
     margin-bottom: 0px;
     padding-top: 20px;
     padding-bottom: 20px;
+    border-bottom: 4px solid #101a27;
+    box-shadow: 0px 6px 6px -4px black;
 }
 
 .orbit-picture-half {
     width: 50%;
+}
+
+a.button {
+    background-color: #00abaa;
+    border-radius: 2px;
+    margin-left: -20px;
 }
 
 button {
@@ -193,7 +256,7 @@ p {
     z-index: 5;
     width: 100%;
     max-width: 100%;
-    background-color: #212830;
+    background-color: #08090b;
 }
 
 .footer-container {
@@ -204,7 +267,7 @@ p {
     background-image: url("../img/footer-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 250px;
+    height: 300px;
 }
 
 @media screen and (min-width: 1030px) {
@@ -212,9 +275,15 @@ p {
     }
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1023px) {
     video.stream-video {
         margin-top: -10%;
+    }
+
+    div.stream-video-darken {
+        top: -75px;
+        left: 0px;
+        width: 120%;
     }
 
     .footer-container {
