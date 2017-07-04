@@ -19,14 +19,14 @@ body {
 
 video.star-field-video { 
     width: 100%;
-    background: url("../img/videobg.jpg") no-repeat;
+    background: url("../img/videobgblack.jpg") no-repeat;
     background-size: cover; 
     overflow: hidden;
 }
 
 video.stream-video { 
     width: 100%;
-    background: url("../img/videobg.jpg") no-repeat;
+    background: url("../img/videobgblack.jpg") no-repeat;
     background-size: cover; 
     border-top: 2px solid #001111;
     border-left: 2px solid #001111;
@@ -190,6 +190,7 @@ div.points {
     background-color: black;
     border-left: 2px solid black;
     border-right: 2px solid black;
+    max-height: 365.817px;
 }
 
 .orbit-bullets {
