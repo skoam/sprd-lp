@@ -1,16 +1,16 @@
 @font-face {
     font-family: Exo-ExtraBold;
-    src: url("../fonts/Exo2-ExtraBold.ttf");
+    src: url("./fonts/Exo2-ExtraBold.ttf");
 }
 
 @font-face {
     font-family: Exo-Medium;
-    src: url("../fonts/Exo2-Medium.ttf");
+    src: url("./fonts/Exo2-Medium.ttf");
 }
 
 @font-face {
     font-family: OpenSans-Light;
-    src: url("../fonts/OpenSans-Light.ttf");
+    src: url("./fonts/OpenSans-Light.ttf");
 }
 
 body {
@@ -168,9 +168,23 @@ a.link-logo {
     height: 677px;
 }
 
-.hero-section-grow {
-    margin-left: 25px;
-    height: 500px;
+.hero-section-features {
+    background-color: black;
+}
+
+.slick-list {
+    background-color: black;
+}
+
+.slick-dots {
+    background-color: black;
+    padding-bottom: 20px;
+    border-bottom: 4px solid #101a27;
+    box-shadow: 0px 6px 6px -4px black;
+}
+
+.slick-textbox-left {
+    padding-bottom: 20px;
 }
 
 .hero-section-points {
@@ -183,6 +197,8 @@ a.link-logo {
     background: linear-gradient(#050a0d, black); /* Standard syntax */
 
     height: auto;
+
+    padding-bottom: 20px;
 }
 
 div.revolution-description {
@@ -205,9 +221,6 @@ div.points {
     margin-top: 0px;
     margin-bottom: 0px;
     padding-top: 20px;
-    padding-bottom: 20px;
-    border-bottom: 4px solid #101a27;
-    box-shadow: 0px 6px 6px -4px black;
 }
 
 .orbit-picture-half {
@@ -357,6 +370,16 @@ p {
     }
 }
 
+@media screen and (max-width: 700px) {
+    .slick-textbox-left {
+        width: 100%;
+    }
+
+    .orbit-picture-half {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 580px) {
     .stream-video-darken {
         opacity: 1;
@@ -386,13 +409,4 @@ p {
     .hero-section-revolution {
         height: auto;
     }
-
-    .left-textbox {
-        width: 100%;
-    }
-
-    .orbit-image {
-        opacity: 0;
-    }
 }
-

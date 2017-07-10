@@ -7,7 +7,8 @@
         <title>Stream Merch</title>
         <link rel="stylesheet" href="css/foundation.css">
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.css" />
-        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/slick-theme.css">
         <link rel="stylesheet" href="css/custom.css">
         <script src="//use.fontawesome.com/fb1f2d7608.js"></script>
     </head>
@@ -29,8 +30,8 @@
 
         <div class="row large-8 medium-12 small-12 centered stream-video-container">
             <div class="row large-8 medium-12 small-12 centered stream-video-overlay">
-                <img class="notification-t-shirt" src="img/shirtanim_glitch.gif"></img>
-                <img class="notification-headline" src="img/alert.png"></img>
+                <a href="#"><img class="notification-t-shirt" src="img/shirtanim_glitch.gif"></img>
+                <img class="notification-headline" src="img/alert.png"></img></a>
             </div>
             <div class="row large-8 medium-12 small-12 centered stream-video-darken"></div>
             <video playsinline autoplay muted loop poster="img/videobg.jpg" id="stream-video" class="stream-video">
@@ -98,53 +99,42 @@
 
         <div class="row large-12 small-12 medium-12 lower-main-container collapse" id="area-features">
             <div class="large-2 column forced-column hide-for-medium-only hide-for-small-only"></div>
-            <div class="orbit large-8 medium-12 small-12 column" role="region" aria-label="Presentation Container" data-orbit>
-                <div class="orbit-wrapper">
-                    <ul class="orbit-container" id="orbit-container">
-                        <li class="is-active orbit-slide">
-                            <figure class="orbit-figure">
-                                <div class="column large-6 medium-6 small-6 top-textbox left-textbox align-center" id="orbit-text-slide-1">
-                                    <h2 class="align-left">EARN MONEY</h2>
-                                    <p class="align-left">
-                                        With the new StreamMerch plugin, your fans can donate in a new and exciting way. In a matter of clicks, you can link your stream with your exclusive merch donation platform, and get realtime love from your fans with each purchase. Create stream-related merch, and get personalized messages from your fans directly on your stream! Get started today. It's free!
-                                    </p>
-                                    <a href="#" class="button">SUBSCRIBE</a>
-                                </div>
-                                <img class="orbit-image orbit-picture-half" src="img/grow_channel_bg.jpg" alt="Space">
-                            </figure>
-                        </li>
-                        <li class="orbit-slide">
-                            <figure class="orbit-figure">
-                                <div class="column large-6 medium-6 small-6 top-textbox left-textbox align-center" id="orbit-text-slide-2">
-                                    <h2 class="align-left">STRENGTHEN THE CONNECTION TO YOUR FANS</h2>
-                                    <p class="align-left">
-                                        Our revolutionary new plugin lets you connect to your fans in a way never seen before! Set up your own StreamMerch Shop, and connect directly with your fans through the power of merchandise. Every time a purchase is made, your fans can send you a personal message that appears directly on your live stream. Fan love and appreciation, live and in color!
-                                    </p>
-                                    <a href="#" class="button">SUBSCRIBE</a>
-                                </div>
-                                <img class="orbit-image orbit-picture-half" src="img/grow_channel_bg_2.jpg" alt="Space">
-                            </figure>
-                        </li>
-                        <li class="orbit-slide">
-                            <figure class="orbit-figure">
-                                <div class="column large-6 medium-6 small-6 top-textbox left-textbox align-center" id="orbit-text-slide-3">
-                                    <h2 class="align-left">A NEW SPIN ON YOUR BRAND</h2>
-                                    <p class="align-left">
-                                        This isn't your run of the mill donation program. Why not connect with your fans in a way they'll truly cherish and that you'll really appreciate? With StreamMerch, your fans can donate to your stream through the purchase of branded merch. Money donations are here one second, forgotten the next. Merchandise is the gift that keeps on giving.
-                                    </p>
-                                    <a href="#" class="button">SUBSCRIBE</a>
-                                </div>
-                                <img class="orbit-image orbit-picture-half" src="img/grow_channel_bg_3.jpg" alt="Space">
-                            </figure>
-                        </li>
-                    </ul>
-                </div>
-                <nav class="orbit-bullets">
-                    <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
-                    <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
-                    <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
-                </nav>
-            </div> 
+
+            <div id="slick-slider" class="large-8 medium-12 small-12 column hero-section-features">
+                <div>
+                    <div class="column large-6 medium-6 small-6 top-textbox left-textbox align-center slick-textbox-left">
+                        <h2 class="align-left">EARN MONEY</h2>
+                        <p class="align-left">
+                            With the new StreamMerch plugin, your fans can donate in a new and exciting way. In a matter of clicks, you can link your stream with your exclusive merch donation platform, and get realtime love from your fans with each purchase. Create stream-related merch, and get personalized messages from your fans directly on your stream! Get started today. It's free!
+                        </p>
+                        <a href="#" class="button">SUBSCRIBE</a>
+                   </div>
+                   <img class="orbit-picture-half" src="img/grow_channel_bg.jpg" alt="Space">
+               </div>
+
+                <div>
+                   <div class="column large-6 medium-6 small-6 top-textbox left-textbox align-center slick-textbox-left">
+                        <h2 class="align-left">STRENGTHEN THE CONNECTION TO YOUR FANS</h2>
+                        <p class="align-left">
+                            Our revolutionary new plugin lets you connect to your fans in a way never seen before! Set up your own StreamMerch Shop, and connect directly with your fans through the power of merchandise. Every time a purchase is made, your fans can send you a personal message that appears directly on your live stream. Fan love and appreciation, live and in color!
+                        </p>
+                        <a href="#" class="button">SUBSCRIBE</a>
+                    </div>
+                    <img class="orbit-picture-half" src="img/grow_channel_bg_2.jpg" alt="Space">
+               </div>
+
+               <div>
+                   <div class="column large-6 medium-6 small-6 top-textbox left-textbox align-center slick-textbox-left">
+                       <h2 class="align-left">A NEW SPIN ON YOUR BRAND</h2>
+                       <p class="align-left">
+                           This isn't your run of the mill donation program. Why not connect with your fans in a way they'll truly cherish and that you'll really appreciate? With StreamMerch, your fans can donate to your stream through the purchase of branded merch. Money donations are here one second, forgotten the next. Merchandise is the gift that keeps on giving.
+                       </p>
+                       <a href="#" class="button">SUBSCRIBE</a>
+                   </div>
+                   <img class="orbit-picture-half" src="img/grow_channel_bg_3.jpg" alt="Space">
+               </div>
+            </div>
+
             <div class="large-2 column forced-column hide-for-medium-only hide-for-small-only"></div>
         </div>
 
@@ -174,12 +164,14 @@
             <div class="large-2 column forced-column hide-for-medium-only hide-for-small-only"></div>
         </div>
 
-        <!-- <script async="" src="//www.google-analytics.com/analytics.js"></script> --!>
 
-        <script src="//www.fumiko-game.com/keyaccounts/resource/landingpages/foundation/js/vendor/jquery.min.js"></script>
-        <script src="//www.fumiko-game.com/keyaccounts/resource/landingpages/foundation/js/vendor/what-input.min.js"></script>
-        <script src="//www.fumiko-game.com/keyaccounts/resource/landingpages/foundation/js/foundation.min.js"></script>
-        <script src="//www.fumiko-game.com/keyaccounts/resource/landingpages/foundation/js/app.js"></script>
+        <script src="js/vendor/jquery-3.2.1.min.js"></script>
+        <script src="js/vendor/what-input.js"></script>
+        <script src="js/vendor/foundation.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/app.js"></script>
+
+        <!-- <script async="" src="//www.google-analytics.com/analytics.js"></script> --!>
 
         <!--<script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -190,125 +182,5 @@
             ga('create', 'UA-68252518-1', 'auto');
             ga('send', 'pageview');
         </script>--!>
-
-        <script>
-            var starFieldVideo = document.getElementById("star-field");
-            var starFieldVideoSource = document.getElementById("star-field-videosource");
-
-            var streamVideo = document.getElementById("stream-video");
-            var streamVideoSource = document.getElementById("stream-video-source");
-            
-            starFieldActive = false;
-            streamActive = false;
-            
-            var firstContainer = document.getElementById("first-container");
-            var menuBar = document.getElementById("menu-bar");
-
-            var orbitTextSliders = $("[id^=orbit-text-slide]");
-            var orbitContainer = document.getElementById("orbit-container");
-
-            var update = setInterval(function () {
-                if (window.scrollY > $(firstContainer).offset().top - 35) {
-                    menuBar.style.position = "fixed";
-                    menuBar.style.top = "0px";
-                    menuBar.style.zIndex = "10";
-
-                    firstContainer.style.marginTop = "40px";
-                } else {
-                    menuBar.style.position = "relative";
-                    menuBar.style.top = "";
-                    menuBar.style.zIndex = "3";
-
-                    firstContainer.style.marginTop = "";
-                }
-
-                if ($(document).width() > 669) {
-                    if (!streamActive) {
-                        streamVideoSource.src = "video/stream_6_cut.mp4";
-                        streamVideo.load();
-                        streamActive = true;
-                    }
-                } else {
-                    if (streamActive) {
-                        streamVideoSource.src = "video/black.mp4";
-                        streamVideo.load();
-                        streamActive = false;
-                    }
-                }
-
-                if ($(document).width() > 1023) {
-                    if (!starFieldActive) {
-                        starFieldVideoSource.src = "video/particles_15_cut.mp4";
-                        starFieldVideo.load();
-                        starFieldActive = true;
-                    }
-                } else {
-                    if (starFieldActive) {
-                        starFieldVideoSource.src = "video/black.mp4";
-                        starFieldVideo.load();
-                        starFieldActive = false;
-                    }
-                }
-                
-                /*var currentMaxSliderHeight = 0;
-                for (var i = 0; i < orbitTextSliders.length; i++) {
-                    if ($(orbitTextSliders[i]).height() != null && $(orbitTextSliders[i]).height() > currentMaxSliderHeight) {
-                        currentMaxSliderHeight = $(orbitTextSliders[i]).height();
-                    }
-                }
-                
-                if (currentMaxSliderHeight > 0) {
-                    orbitContainer.style.maxHeight = currentMaxSliderHeight;
-                }*/
-            }, 1);
-
-            $(document).foundation({
-              orbit: {
-                  animation: 'slide',
-                  timer_speed: 1000,
-                  pause_on_hover: true,
-                  animation_speed: 500,
-                  variable_height: true,
-                  swipe: true,
-                  stack_on_small: true
-                }
-            });
-
-            var menuButtonPlugin = document.getElementById("menubutton-plugin");
-            menuButtonPlugin.onclick = function (e) {
-                $("html,body").animate({
-                    scrollTop : $(firstContainer).offset().top
-                }, 250, 'swing');
-                
-                $("[id^=menubutton]").parent().removeClass("active");
-                $(this).parent().addClass("active");
-
-                e.preventDefault();
-            };
-
-            var service = document.getElementById("area-service");
-            /*var menuButtonService = document.getElementById("menubutton-service");
-            menuButtonService.onclick = function (e) {
-                $("html,body").animate({
-                    scrollTop : $(service).offset().top - 80
-                }, 200, 'swing');
-
-                $("[id^=menubutton]").parent().removeClass("active");
-                $(this).parent().addClass("active");
-                e.preventDefault();
-            };*/
-
-            var menuButtonFeatures = document.getElementById("menubutton-features");
-            var features= document.getElementById("area-features");
-            menuButtonFeatures .onclick = function (e) {
-                $("html,body").animate({
-                    scrollTop : $(service).offset().top - 80
-                }, 200, 'swing');
-
-                $("[id^=menubutton]").parent().removeClass("active");
-                $(this).parent().addClass("active");
-                e.preventDefault();
-            };
-        </script>
     </body>
 </html>
