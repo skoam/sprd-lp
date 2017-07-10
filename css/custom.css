@@ -68,16 +68,16 @@ video.stream-video {
 }
 
 .notification-t-shirt {
-    width: 15%;
+    width: 20%;
     position: absolute;
-    top: 20%;
-    left: 30%;
+    top: 21%;
+    left: 27.7%;
 }
 
 .notification-headline {
     width: 30%;
     position: absolute;
-    top: 48%;
+    top: 58%;
     left: 22.5%;
 }
 
@@ -110,6 +110,10 @@ a:hover {
 
 .top-bar {
     z-index: 8;
+}
+
+p {
+    text-shadow: 1px 1px 3px black;
 }
 
 .relative-position {
@@ -160,7 +164,8 @@ a.link-logo {
 
 .hero-section-revolution {
     background-image: url("../img/monitor_sm.jpg");
-    height: 500px;
+    background-position: center;
+    height: 677px;
 }
 
 .hero-section-grow {
@@ -177,7 +182,11 @@ a.link-logo {
     background: -moz-linear-gradient(#050a0d, black); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#050a0d, black); /* Standard syntax */
 
-    height: 250px;
+    height: auto;
+}
+
+div.revolution-description {
+    width: 600px;
 }
 
 div.points {
@@ -190,7 +199,6 @@ div.points {
     background-color: black;
     border-left: 2px solid black;
     border-right: 2px solid black;
-    max-height: 365.817px;
 }
 
 .orbit-bullets {
@@ -266,7 +274,7 @@ p {
 }
 
 .top-textbox {
-    padding-top: 25px;
+    padding-top: 40px;
 }
 
 .align-center {
@@ -323,3 +331,68 @@ p {
         background-image: none;
     }
 }
+
+@media screen and (max-width: 1600px) {
+    .hero-section-revolution {
+        background-image: url("../img/monitor_sm_smaller.jpg");
+    }
+
+    div.revolution-description {
+        width: 550px;
+    }
+}
+
+@media screen and (max-width: 1380px) {
+    .hero-section-revolution {
+        background-image: url("../img/monitor_sm_without_monitor.jpg");
+        height: 400px;
+    }
+
+    .bottom-textbox {
+        padding-top: 45px;
+    }
+
+    div.revolution-description {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .stream-video-darken {
+        opacity: 1;
+    }
+
+    video.stream-video {
+        height: 250px;
+    }
+
+    .notification-t-shirt {
+        width: 140px;
+        left: 50%;
+        margin-left: -60px;
+        top: 17%;
+    }
+
+    .notification-headline {
+        width: 270px; 
+        left: 50%;
+        margin-left: -125px;
+    }
+
+    .revolution-description {
+        padding: 30px;
+    }
+
+    .hero-section-revolution {
+        height: auto;
+    }
+
+    .left-textbox {
+        width: 100%;
+    }
+
+    .orbit-image {
+        opacity: 0;
+    }
+}
+
